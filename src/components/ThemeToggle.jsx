@@ -13,7 +13,9 @@ export const ThemeToggle = () => {
     } else {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      if (!storedTheme) {
+        localStorage.setItem("theme", "dark");
+      }
     }
   }, []);
 
