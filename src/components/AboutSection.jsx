@@ -53,7 +53,7 @@ export const AboutSection = () => {
                     Electrical Engineering / System Designs
                   </h4>
                   <p className="text-muted-foreground">
-                    Creating Devops frameworks: Put more skills here
+                    Studying Computer Engineering @ K-State
                   </p>
                 </div>
               </div>
