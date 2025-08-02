@@ -3,9 +3,9 @@ import { useState } from "react";
 
 const skills = [
   // the languages I know
-  { name: "HTML/CSS", level: 80, category: "Languages" },
-  { name: "Python", level: 99, category: "Languages" },
-  { name: "Java", level: 80, category: "Languages" },
+  { name: "HTML/CSS", category: "Languages" },
+  { name: "Python", category: "Languages" },
+  { name: "Java", category: "Languages" },
 
   //the tools i use
   { name: "Git", level: 50, category: "Tools" },
@@ -19,7 +19,7 @@ const skills = [
 const categories = ["All", "Languages", "Tools", "Frameworks"];
 
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "All" || skill.category === activeCategory
@@ -52,21 +52,13 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs cardhover"
+              className="bg-card p-6 rounded-lg shadow-xs cardhover" /* controls the background of the skill names */
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name} </h3>
-              </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
+              <div className="text-center mb-0">
+                <h3 className="text-secondary font-semi-bold text-lg">
+                  {/* this controls the color of the skills texts */}{" "}
+                  {skill.name}{" "}
+                </h3>
               </div>
             </div>
           ))}
