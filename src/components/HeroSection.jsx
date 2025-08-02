@@ -20,9 +20,9 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I’m someone who thrives at the intersection of structure and
-            creativity—I’ve taught languages, coached athletes, and now I write
-            code to solve real-world problems, one dataset at a time.
+            I am a Computer Engineering student at K-State University in
+            Manhattan, KS. I am glad that you are here on my webpage! Take a
+            dive into a little about what I am all about. Thank you!
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -34,7 +34,10 @@ export const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-8 left=1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2"> Scroll</span>
+        <span className="center text-sm text-muted-foreground mb-2">
+          {" "}
+          Scroll
+        </span>
         <ArrowDown className="h-5 w-5 text-primary" />
       </div>
     </section>

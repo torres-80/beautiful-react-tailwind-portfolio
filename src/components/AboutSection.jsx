@@ -1,4 +1,4 @@
-import { Briefcase, CircuitBoard, User } from "lucide-react";
+import { Briefcase, CircuitBoard, GraduationCap } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -12,18 +12,15 @@ export const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
               {" "}
-              Motivated & hardworking Computer Science Student
+              Motivated & hardworking Computer Engineering Student
             </h3>
 
-            <p className="text-muted-foreground">
-              {" "}
-              Hpye myself up in this section. Need to figure out how{" "}
-            </p>
+            <p className="text-muted-foreground"> </p>
 
             <p className="text-muted-foreground">
               {" "}
-              Passionate about programming, engineering and something something
-              (make this sound better)
+              Passionate about programming, engineering, mathematics and working
+              with people to solve real-world complex problems!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -62,14 +59,15 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary-10">
-                  <User className="h- w-6 text-primary" />
+                  <GraduationCap className="h- w-6 text-primary" />
                   <div className="text-left">
                     <h4 className="font-semibold text-lg">
-                      something that relates to the user from my end
+                      Relevant Coursework
                     </h4>
                     <p className="text-muted-foreground">
-                      could be something like, seamless integration of AWS
-                      services
+                      Programming fundamentals, Data and Program Structures,
+                      Circuit Theory, Design of Digital Systems, Linear Systems,
+                      Computer Design, Microcontrollers
                     </p>
                   </div>
                 </div>
@@ -83,6 +81,7 @@ export const AboutSection = () => {
                     <h4 className="font-semibold text-lg">Experience</h4>
                     <p className="text-muted-foreground">
                       Colorado State University : CLI program for filtering data
+                      relating to environmental impact of Imidacloprid on bees.
                       (make this better in the future) Amazon: Area Manager
                     </p>
                   </div>
