@@ -21,8 +21,9 @@ export const HeroSection = () => {
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             I am a Computer Engineering student at K-State University in
-            Manhattan, KS. I am glad that you are here on my webpage! Take a
-            dive into a little about what I am all about. Thank you!
+            Manhattan, KS. I am glad that you are here on my webpage! I have
+            created this website to show my projects and progress as I complete
+            my degree.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
