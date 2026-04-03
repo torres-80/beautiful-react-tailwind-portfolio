@@ -19,8 +19,8 @@ export const AboutSection = () => {
 
             <p className="text-muted-foreground">
               {" "}
-              Passionate about programming, engineering, mathematics and working
-              with people to solve real-world complex problems!
+              Passionate about mathematics, physics, engineering and working
+              with people to solve real-world problems!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -44,7 +44,7 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary-10">
-                  <CircuitBoard className="h- w-6 text-primary" />
+                  <CircuitBoard className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
@@ -59,32 +59,41 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary-10">
-                  <GraduationCap className="h- w-6 text-primary" />
-                  <div className="text-left">
-                    <h4 className="font-semibold text-lg">
-                      Relevant Coursework
-                    </h4>
-                    <p className="text-muted-foreground">
-                      Programming fundamentals, Data and Program Structures,
-                      Circuit Theory, Design of Digital Systems, Linear Systems,
-                      Computer Design, Microcontrollers
-                    </p>
-                  </div>
+                  <GraduationCap className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Relevant Coursework</h4>
+                  <p className="text-muted-foreground">
+                    Programming fundamentals, Data and Program Structures,
+                    Circuit Theory, Design of Digital Systems, Linear Systems,
+                    Computer Design, Microcontrollers
+                  </p>
                 </div>
               </div>
             </div>
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary-10">
-                  <Briefcase className="h- w-6 text-primary" />
-                  <div className="text-left">
-                    <h4 className="font-semibold text-lg">Experience</h4>
-                    <p className="text-muted-foreground">
-                      Colorado State University : CLI program for filtering data
-                      relating to environmental impact of Imidacloprid on bees.
-                      (make this better in the future) Amazon: Area Manager
-                    </p>
-                  </div>
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Experience</h4>
+                  <p className="text-muted-foreground">
+                    Colorado State University : CLI program for filtering data
+                    relating to environmental impact of Imidacloprid on bees.
+                    (make this better in the future)
+                  </p>
+                  <br />
+                  <p>
+                    Amazon Area Manager: Effectively lead a team of over 40
+                    employees. Implemented process enhancement utilizing
+                    methodologies such as Lean, Kaizen, and/or Six Sigma.{" "}
+                  </p>
+                  <br />
+                  <p>
+                    High School Spanish Teacher: Providing world-class Spanish
+                    instruction to students grades 9th-12th.{" "}
+                  </p>
                 </div>
               </div>
             </div>

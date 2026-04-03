@@ -27,7 +27,7 @@ export const ContactSection = () => {
           Get In <span className="text-primary"> Touch</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Needing a nutcase programmer? Feel free to reach out.
+          Needing a nutcase programmer? Feel free to reach out. {""}
           <span className="text-primary">
             I'm always open to discussing new opportunities.
           </span>
@@ -76,7 +76,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium hover:text-primary"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Topeka,KS,United States
+                    Topeka, KS, United States
                   </a>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-secondary"
-                  placeholder="Type your name here!"
+                  placeholder="Type your name here"
                 />
               </div>
               <div>
@@ -131,7 +131,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-secondary"
-                  placeholder="Enter your email here!"
+                  placeholder="Enter your email here"
                 />
               </div>
               <div>
@@ -154,7 +154,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2",
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
