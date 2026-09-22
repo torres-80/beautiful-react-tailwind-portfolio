@@ -51,7 +51,7 @@ export const AboutSection = () => {
                     Computer Engineering
                   </h4>
                   <p className="text-muted-foreground">
-                    Studying Computer Engineering @ K-State
+                    Studying Computer Science @ K-State
                   </p>
                 </div>
               </div>
