@@ -81,7 +81,6 @@ export const AboutSection = () => {
                   <p className="text-muted-foreground">
                     Colorado State University : CLI program for filtering data
                     relating to environmental impact of Imidacloprid on bees.
-                    (make this better in the future)
                   </p>
                   <br />
                   <p>
