@@ -1,25 +1,13 @@
-import { useToast } from "@/hooks/use-toast";
+
 import { cn } from "@/lib/utils";
 import { Linkedin, Mail, MapPin, Phone, Send, Twitch } from "lucide-react";
-import { useState } from "react";
+import {useForm, ValidationError} from "@formspree/react";
 
 export const ContactSection = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+ 
+  const [state, handleSubmit] = useForm("mwlpqreq");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon!",
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -46,7 +34,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-mediu hover:text-primary"> Email</h4>
                   <a
-                    href="mailto:itcache1@gmaillcom"
+                    href="mailto:itcache1@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     itcache1@gmail.com
@@ -99,15 +87,14 @@ export const ContactSection = () => {
 
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
           >
             <h3 className="text-2xl font-semibold mb-6 text-primary">
               {" "}
               Send a Message
             </h3>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="Ivan" className="block text-sm font-med mb-2">
+                <label htmlFor="name" className="block text-sm font-med mb-2">
                   {" "}
                   Your Name
                 </label>
@@ -118,6 +105,11 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-secondary"
                   placeholder="Type your name here"
+                />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
                 />
               </div>
               <div>
@@ -132,6 +124,11 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-secondary"
                   placeholder="Enter your email here"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div>
@@ -149,17 +146,27 @@ export const ContactSection = () => {
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-secondary resize-none"
                   placeholder="Excited to hear from you!"
                 />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
               <button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={state.submitting}
                 className={cn(
                   "cosmic-button w-full flex items-center justify-center gap-2",
                 )}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {state.submitting ? "Sending..." : "Send Message"}
                 <Send size={16} />
               </button>
+              {state.succeeded && (
+                <p className="text-green-500 mt-2">
+                  Thank you for your message! I will get back to you soon.
+                </p>
+              )}
             </form>
           </div>
         </div>
