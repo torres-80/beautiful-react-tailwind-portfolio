@@ -23,7 +23,7 @@ export const HeroSection = () => {
             I am a Computer Science student at K-State University in
             Manhattan, KS. I am glad that you are here on my webpage! I have
             created this website to show my projects and progress as I complete
-            my degree.d
+            my degree.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
