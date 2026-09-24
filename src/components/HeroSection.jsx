@@ -20,10 +20,10 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I am a Computer Engineering student at K-State University in
+            I am a Computer Science student at K-State University in
             Manhattan, KS. I am glad that you are here on my webpage! I have
             created this website to show my projects and progress as I complete
-            my degree.
+            my degree.d
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

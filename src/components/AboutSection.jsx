@@ -12,14 +12,14 @@ export const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
               {" "}
-              Motivated & hardworking Computer Engineering Student
+              Motivated & hardworking Computer Science Student
             </h3>
 
             <p className="text-muted-foreground"> </p>
 
             <p className="text-muted-foreground">
               {" "}
-              Passionate about mathematics, physics, engineering and working
+              Passionate about mathematics, physics, software development and working
               with people to solve real-world problems!
             </p>
 
@@ -48,7 +48,7 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Computer Engineering
+                    Computer Science
                   </h4>
                   <p className="text-muted-foreground">
                     Studying Computer Science @ K-State
@@ -65,7 +65,7 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg">Relevant Coursework</h4>
                   <p className="text-muted-foreground">
                     Programming fundamentals, Data and Program Structures,
-                    Circuit Theory, Design of Digital Systems, Linear Systems,
+                    Computer Architecture, 
                     Computer Design, Microcontrollers
                   </p>
                 </div>
