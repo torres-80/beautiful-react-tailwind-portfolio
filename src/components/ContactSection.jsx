@@ -27,7 +27,7 @@ export const ContactSection = () => {
           Get In <span className="text-primary"> Touch</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Needing a nutcase programmer? Feel free to reach out. {""}
+          Needing a dedicated programmer? Feel free to reach out. {""}
           <span className="text-primary">
             I'm always open to discussing new opportunities.
           </span>
